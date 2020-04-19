@@ -77,7 +77,7 @@ a:visited {
   a 	 { color: lightgrey; }
   a:visited { color: grey; }
   #connected, #didcon2 { color: #00a400; }
-  #disconnected, #didntcon2 { color: #00a800; }
+  #disconnected, #didntcon2 { color: #a80000; }
 }
 
 @media screen and (max-device-width: 600px) {
