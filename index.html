@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Am I Connected to Purdue?</title>
+  </head>
+  <body>
+    <h1 class="title" id="title">Am I Connected to Purdue?</h1>
+    <div class="message" id="checking"> 
+      Checking . . . 
+    </div>
+    <div class="message" id="yes">
+      You are <p id="connected">connected.</p>
+      <p class="memo">Network resources are accessible. <a id="linkcon" onclick="showConnected()"> Learn more</a></p>
+      <p id="coninfo" class="info">This page has successfully connected to resources only available on Purdue's intranet. You appear to be connected, either through a <a target="_blank" href="https://www.itap.purdue.edu/connections/vpn/">VPN</a> or by being connected locally. </p>
+    </div>
+    <div class="message" id="no">
+      You are <p id="disconnected">not connected.</p>
+      <p class="memo">Network resources may be inaccessible. <a id="linkdis" onclick="showDisconnected()">Learn more</a></p>
+      <p id="disinfo" class="info">This page was unable to connect to resources available on Purdue's intranet. To connect to Purdue, make sure you're connected to university internet <a target="_blank" href="https://www.purdue.edu/airlink/">(PAL)</a> or connect via a <a target="_blank" href="https://www.itap.purdue.edu/connections/vpn/">VPN</a>. </p>
+    </div>
+    <div id="moreinfo">
+      <p class="memo heading">How this page works</p>
+      <p class="info">
+      This page checks if it can retrieve assets from webservers only available from a Purdue IP address. Because it
+      <a class="inline" id="didcon">did connect</a>
+      <a class="inline" id="didntcon">didn't connect</a> 
+    it displays that you are
+      <a class="inline" id="not">not </a>
+    connected. </p>
+      <p class="info">printers.itap.purdue.edu: 
+      <a class="inline" id="didcon2"> Connected</a>
+      <a class="inline" id="didntcon2"> Disconnected</a>
+      <p>
+  </body>
+  <script src="index.js" type="text/javascript"></script>
+</html>
